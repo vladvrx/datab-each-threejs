@@ -1,0 +1,111 @@
+#threejs-hud {
+  pointer-events: none;
+}
+
+#threejs-hud .pointer,
+#threejs-hud button,
+#threejs-hud a,
+#threejs-hud [data-pointer] {
+  pointer-events: auto;
+}
+
+#threejs-hud .hidden,
+#threejs-hud .hidden *,
+#threejs-hud [hidden],
+#threejs-hud [hidden] *,
+#threejs-hud .menu:not(.is-open),
+#threejs-hud .menu:not(.is-open) * {
+  pointer-events: none !important;
+}
+
+#threejs-hud header:not(.is-visible),
+#threejs-hud header:not(.is-visible) * {
+  pointer-events: none !important;
+}
+
+.page-intro[data-v-366b880d] {
+  z-index: 16;
+}
+
+html.journey-started .page-intro {
+  z-index: 0;
+  pointer-events: none !important;
+}
+
+.dialog-bubble[data-v-9946fd7c],
+.dialog-buttons[data-v-a65553f3] {
+  pointer-events: auto;
+}
+
+.page-intro.threejs-start-fallback[hidden] {
+  display: none !important;
+}
+
+.page-intro .start-btn,
+.start .start-btn,
+.start.v-enter-active .start-btn,
+.start.v-leave-active .start-btn {
+  pointer-events: auto !important;
+}
+
+.menu.is-open .menu-overlay[data-v-2fd699fb] {
+  pointer-events: auto;
+}
+
+.phone-overlay[data-v-99fe8ba9]:not([hidden]) {
+  pointer-events: auto;
+}
+
+.phone-hud,
+.new-phone,
+.phone-overlay,
+.page-phone,
+.phone-tab.map {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+html:not(.intro-cta-visible) .databeach-home-logo,
+html.journey-started .databeach-home-logo {
+  display: none !important;
+}
+
+.threejs-circle {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.4em;
+  height: 4.4em;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #fff;
+  color: #3b3777;
+  box-shadow: 0 0.35em 0 rgba(31, 44, 96, 0.18);
+}
+
+.threejs-circle.green {
+  background: #02c6a7;
+  color: #fff;
+}
+
+.threejs-circle.bordered {
+  background: transparent;
+  border: 0.18em solid #fff;
+  color: #fff;
+  box-shadow: none;
+}
+
+.threejs-circle .icon-svg {
+  width: 46%;
+  height: 46%;
+  fill: currentColor;
+}
+
+.threejs-circle.muted .icon-svg {
+  opacity: 0.45;
+}
+

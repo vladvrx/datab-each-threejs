@@ -1,0 +1,11 @@
+{
+  "name": "datab-each-threejs",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Standalone Three.js DATAB-EACH game using the original loadWebGL engine.",
+  "scripts": {
+    "dev": "node server.mjs",
+    "start": "node server.mjs"
+  }
+}

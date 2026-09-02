@@ -1,0 +1,2880 @@
+{
+  "Intro": {
+    "__first__": "Hello",
+    "Hello": {
+      "id": "Hello",
+      "isSpeak": true,
+      "bubbles": [
+        "HELLO WELCOME..."
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Hello"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "Hello2"
+        }
+      ]
+    },
+    "Hello2": {
+      "id": "Hello2",
+      "isSpeak": true,
+      "bubbles": [
+        "HAVE YOU SEEN WHAT THE Glorbs found!"
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Neutral"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "Hello3"
+        }
+      ]
+    },
+    "Hello3": {
+      "id": "Hello3",
+      "isSpeak": true,
+      "bubbles": [
+        "WE NEED your help restoring the power back on the island, CAN YOU HELP US!!"
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Thinking"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "Custom"
+        }
+      ]
+    },
+    "Custom": {
+      "id": "Custom",
+      "isPrompt": true,
+      "choices": {
+        "Yes": {
+          "id": "Yes",
+          "value": "Yes",
+          "next": [
+            {
+              "action": "GOTO",
+              "node": "Skip"
+            }
+          ]
+        },
+        "No": {
+          "id": "No",
+          "value": "No thanks",
+          "next": [
+            {
+              "action": "GOTO",
+              "node": "Skip"
+            }
+          ]
+        }
+      }
+    },
+    "Skip": {
+      "id": "Skip",
+      "isSpeak": true,
+      "bubbles": [
+        "No problem, I&#39;ll drop you off on <strong>Cove Island</strong>"
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Gain"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "END"
+        }
+      ]
+    }
+  },
+  "dev": {
+    "__first__": "Test",
+    "Test": {
+      "id": "Test",
+      "isSpeak": true,
+      "bubbles": [
+        "Hello world"
+      ],
+      "next": [
+        {
+          "action": "END"
+        }
+      ]
+    }
+  },
+  "Aven_Quest_Before": {
+    "__first__": "Start",
+    "Start": {
+      "id": "Start",
+      "isSpeak": true,
+      "bubbles": [
+        "Hi there! Did you know <strong>TECH COMPANY #3</strong> can help finance your next big <strong>home improvement</strong>?",
+        "Great! We&#39;re going to renovate some houses on the island with <strong>TECH COMPANY #3</strong>&#39;s help."
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Hello"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GIVE_QUEST_ITEM",
+          "opts": [
+            "aven"
+          ]
+        },
+        {
+          "action": "GOTO",
+          "node": "AfterGiving"
+        }
+      ]
+    },
+    "AfterGiving": {
+      "id": "AfterGiving",
+      "isSpeak": true,
+      "bubbles": [
+        "Take this <strong>hammer</strong> and help us finish the job."
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Happy"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "Next"
+        }
+      ]
+    },
+    "Next": {
+      "id": "Next",
+      "isSpeak": true,
+      "bubbles": [
+        "There are several <strong>around</strong> here that need some fixing!"
+      ],
+      "before": [
+        {
+          "action": "Emote",
+          "opts": [
+            "Gain"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "END"
+        }
+      ]
+    }
+  },
+  "Aven_Quest_Started": {
+    "__first__": "Start",
+    "Start": {
+      "id": "Start",
+      "isSpeak": true,
+      "bubbles": [
+        "Hey! Don&#39;t forget about us, let&#39;s apply the finishing touch to these houses."
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Thinking"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "END"
+        }
+      ]
+    }
+  },
+  "Aven_Quest_Completed": {
+    "__first__": "Start",
+    "Start": {
+      "id": "Start",
+      "isSpeak": true,
+      "bubbles": [
+        "Great work, thanks! Go ahead and keep the <strong>hammer...</strong>",
+        "there are houses in <strong>need of upgrades</strong> all over the island."
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Happy"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "END"
+        }
+      ]
+    }
+  },
+  "Aven_Ambassador_FirstTime": {
+    "__first__": "Start",
+    "Start": {
+      "id": "Start",
+      "isSpeak": true,
+      "bubbles": [
+        "Do you own your own home? <strong>TECH COMPANY #3</strong> can help you secure a competitive interest rate on your player cards."
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Hello"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "Start2"
+        }
+      ]
+    },
+    "Start2": {
+      "id": "Start2",
+      "isSpeak": true,
+      "bubbles": [
+        "Want to find out how?"
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Thinking"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "AskMore"
+        }
+      ]
+    },
+    "AskMore": {
+      "id": "AskMore",
+      "isPrompt": true,
+      "choices": {
+        "no": {
+          "id": "no",
+          "value": "I'll pass.",
+          "next": [
+            {
+              "action": "GOTO",
+              "node": "No"
+            }
+          ]
+        },
+        "yes": {
+          "id": "yes",
+          "value": "Tell me more!",
+          "next": [
+            {
+              "action": "GOTO",
+              "node": "Yes"
+            }
+          ]
+        }
+      }
+    },
+    "Yes": {
+      "id": "Yes",
+      "isSpeak": true,
+      "bubbles": [
+        "<strong>TECH COMPANY #3</strong> offers player cards that uses the equity from your home.",
+        "Use it on home improvement projects or other large purchases."
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Eloquant"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "Yes2"
+        }
+      ]
+    },
+    "Yes2": {
+      "id": "Yes2",
+      "isSpeak": true,
+      "bubbles": [
+        "It&#39;s easy, fast, and simple."
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Happy"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "Manifesto"
+        }
+      ]
+    },
+    "No": {
+      "id": "No",
+      "isSpeak": true,
+      "bubbles": [
+        "No problem! If you change your mind, you know where to find me."
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Gain"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "END"
+        }
+      ]
+    },
+    "Manifesto": {
+      "id": "Manifesto",
+      "isSpeak": true,
+      "bubbles": [
+        "Come check us out!"
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "Detail"
+        }
+      ]
+    },
+    "Detail": {
+      "id": "Detail",
+      "isPrompt": true,
+      "choices": {
+        "no": {
+          "id": "no",
+          "value": "Later.",
+          "next": [
+            {
+              "action": "END"
+            }
+          ]
+        },
+        "yes": {
+          "id": "yes",
+          "value": "Of course!",
+          "next": [
+            {
+              "action": "OPENPHONE",
+              "opts": []
+            }
+          ]
+        }
+      }
+    }
+  },
+  "Zenda_Healed": {
+    "__first__": "Thanks",
+    "Thanks": {
+      "id": "Thanks",
+      "isSpeak": true,
+      "bubbles": [
+        "Ahhh... Much better! Thanks, friend!"
+      ],
+      "before": [
+        {
+          "action": "HEAL",
+          "opts": []
+        }
+      ],
+      "next": [
+        {
+          "action": "END"
+        }
+      ]
+    }
+  },
+  "Aven_Ambassador_ComeBack": {
+    "__first__": "Start",
+    "Start": {
+      "id": "Start",
+      "isSpeak": true,
+      "bubbles": [
+        "Good to see you again. Want to learn more about <strong>TECH COMPANY #3</strong>?"
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Happy"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "AskMore"
+        }
+      ]
+    },
+    "AskMore": {
+      "id": "AskMore",
+      "isPrompt": true,
+      "choices": {
+        "no": {
+          "id": "no",
+          "value": "Maybe later.",
+          "next": [
+            {
+              "action": "GOTO",
+              "node": "No"
+            }
+          ]
+        },
+        "yes": {
+          "id": "yes",
+          "value": "Yes please!",
+          "next": [
+            {
+              "action": "GOTO",
+              "node": "Yes"
+            }
+          ]
+        }
+      }
+    },
+    "Yes": {
+      "id": "Yes",
+      "isSpeak": true,
+      "bubbles": [
+        "At <strong>TECH COMPANY #3</strong>, we&#39;re on a mission to reduce player cards interest rates by using your home equity."
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Eloquant"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "Manifesto"
+        }
+      ]
+    },
+    "No": {
+      "id": "No",
+      "isSpeak": true,
+      "bubbles": [
+        "No problem. Feel free to come back if you change your mind."
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Happy"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "END"
+        }
+      ]
+    },
+    "Manifesto": {
+      "id": "Manifesto",
+      "isSpeak": true,
+      "bubbles": [
+        "Come check us out!"
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "Detail"
+        }
+      ]
+    },
+    "Detail": {
+      "id": "Detail",
+      "isPrompt": true,
+      "choices": {
+        "no": {
+          "id": "no",
+          "value": "Later.",
+          "next": [
+            {
+              "action": "END"
+            }
+          ]
+        },
+        "yes": {
+          "id": "yes",
+          "value": "Of course!",
+          "next": [
+            {
+              "action": "OPENPHONE",
+              "opts": []
+            }
+          ]
+        }
+      }
+    }
+  },
+  "Aven_Quest_SideCompleted": {
+    "__first__": "Start",
+    "Start": {
+      "id": "Start",
+      "isSpeak": true,
+      "bubbles": [
+        "Congratulations! Of all the handy workers on the island, you&#39;re the handiest!"
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Happy"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "END"
+        }
+      ]
+    }
+  },
+  "Citizen_West_PomeloIslandHint": {
+    "__first__": "Start",
+    "Start": {
+      "id": "Start",
+      "isSpeak": true,
+      "bubbles": [
+        "Thanks for fixing that bridge! I&#39;ve been stuck here for ages..."
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Gain"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "Start2"
+        }
+      ]
+    },
+    "Start2": {
+      "id": "Start2",
+      "isSpeak": true,
+      "bubbles": [
+        "As a show of thanks, I&#39;ll tell you a secret... There&#39;s <strong>treasure</strong> on this island..."
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Neutral"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "Start3"
+        }
+      ]
+    },
+    "Start3": {
+      "id": "Start3",
+      "isSpeak": true,
+      "bubbles": [
+        "There are plenty of other secrets to discover around the island."
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Happy"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "END"
+        }
+      ]
+    }
+  },
+  "Citizen_West_ChestHint": {
+    "__first__": "Start",
+    "Start": {
+      "id": "Start",
+      "isSpeak": true,
+      "bubbles": [
+        "Did you know there are <strong>hidden treasures</strong> all over this island?",
+        "And just because I like you, I&#39;m gonna let you in on where one of those treasures is buried..."
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Eloquant"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "Next"
+        }
+      ]
+    },
+    "Next": {
+      "id": "Next",
+      "isSpeak": true,
+      "bubbles": [
+        "Interested?",
+        "Hmm?",
+        "..."
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Thinking"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "AskMore"
+        }
+      ]
+    },
+    "AskMore": {
+      "id": "AskMore",
+      "isPrompt": true,
+      "choices": {
+        "no": {
+          "id": "no",
+          "value": "Already found!",
+          "next": [
+            {
+              "action": "GOTO",
+              "node": "No"
+            }
+          ]
+        },
+        "yes": {
+          "id": "yes",
+          "value": "Sure!",
+          "next": [
+            {
+              "action": "GOTO",
+              "node": "Yes"
+            }
+          ]
+        }
+      }
+    },
+    "No": {
+      "id": "No",
+      "isSpeak": true,
+      "bubbles": [
+        "Well... Alright then!"
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Sad"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "END"
+        }
+      ]
+    },
+    "Yes": {
+      "id": "Yes",
+      "isSpeak": true,
+      "bubbles": [
+        "I saw one hidden on the beach at the top of the village."
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Happy"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "END"
+        }
+      ]
+    }
+  },
+  "Citizen_West_Forest": {
+    "__first__": "Start",
+    "Start": {
+      "id": "Start",
+      "isSpeak": true,
+      "bubbles": [
+        "With all the <strong>Data B-each Points</strong> I collected, I was able to unlock enough equipment to go to the moon!",
+        "Check <strong>your phone</strong> to see what you&#39;ve unlocked!"
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Happy"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "END"
+        }
+      ]
+    }
+  },
+  "Citizen_West_Beach": {
+    "__first__": "Start",
+    "Start": {
+      "id": "Start",
+      "isSpeak": true,
+      "bubbles": [
+        "<strong>HELP!!! SHE&#39;S DROWNING!!!</strong>"
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Fear"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "Next"
+        }
+      ]
+    },
+    "Next": {
+      "id": "Next",
+      "isSpeak": true,
+      "bubbles": [
+        "Oh, I was way off! She&#39;s just swimming nearby..."
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Sad"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "Next2"
+        }
+      ]
+    },
+    "Next2": {
+      "id": "Next2",
+      "isSpeak": true,
+      "bubbles": [
+        "Perhaps she hasn&#39;t heard that there are <strong>boats</strong> at each island to help you move around quickly.",
+        "We should probably tell her!"
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Thinking"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "END"
+        }
+      ]
+    }
+  },
+  "dev_missing": {
+    "__first__": "Start",
+    "Start": {
+      "id": "Start",
+      "isSpeak": true,
+      "bubbles": [
+        "<strong>MISSING DIALOG</strong>"
+      ],
+      "next": [
+        {
+          "action": "END"
+        }
+      ]
+    }
+  },
+  "Brigit_Quest_FirstTime": {
+    "__first__": "Start",
+    "Start": {
+      "id": "Start",
+      "isSpeak": true,
+      "bubbles": [
+        "I&#39;m so happy! I&#39;m about to buy the bike of my dreams. Want to know how I did it?"
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Happy"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "Start2"
+        }
+      ]
+    },
+    "Start2": {
+      "id": "Start2",
+      "isSpeak": true,
+      "bubbles": [
+        "Daily routine! Because <strong>managing your finances</strong> is just like exercising: results come with <strong>regular training!</strong>"
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Sport"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "Start3"
+        }
+      ]
+    },
+    "Start3": {
+      "id": "Start3",
+      "isSpeak": true,
+      "bubbles": [
+        "So... You ready to challenge me?"
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Thinking"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "AskPlay"
+        }
+      ]
+    },
+    "AskPlay": {
+      "id": "AskPlay",
+      "isPrompt": true,
+      "choices": {
+        "No": {
+          "id": "No",
+          "value": "Maybe later.",
+          "next": [
+            {
+              "action": "GOTO",
+              "node": "WhenNo"
+            }
+          ]
+        },
+        "Yes": {
+          "id": "Yes",
+          "value": "Yeah!",
+          "next": [
+            {
+              "action": "END"
+            }
+          ]
+        }
+      }
+    },
+    "WhenNo": {
+      "id": "WhenNo",
+      "isSpeak": true,
+      "bubbles": [
+        "Ok! Come back when you&#39;ve warmed up!"
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Gain"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "END"
+        }
+      ]
+    }
+  },
+  "Brigit_Quest_ComeBack": {
+    "__first__": "Start",
+    "Start": {
+      "id": "Start",
+      "isSpeak": true,
+      "bubbles": [
+        "Ready for a lap?"
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Hello"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "AskPlay"
+        }
+      ]
+    },
+    "AskPlay": {
+      "id": "AskPlay",
+      "isPrompt": true,
+      "choices": {
+        "No": {
+          "id": "No",
+          "value": "Maybe later.",
+          "next": [
+            {
+              "action": "GOTO",
+              "node": "WhenNo"
+            }
+          ]
+        },
+        "Yes": {
+          "id": "Yes",
+          "value": "Let's go!",
+          "next": [
+            {
+              "action": "END"
+            }
+          ]
+        }
+      }
+    },
+    "WhenNo": {
+      "id": "WhenNo",
+      "isSpeak": true,
+      "bubbles": [
+        "Ok, I&#39;ll be here stretching until you change your mind!"
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Sport"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "END"
+        }
+      ]
+    }
+  },
+  "Brigit_Quest_BeforeSide": {
+    "__first__": "Start",
+    "Start": {
+      "id": "Start",
+      "isSpeak": true,
+      "bubbles": [
+        "You&#39;ve completed a lap of the track... Well done!",
+        "Next time, see if you can beat my time by completing the race in under <strong>{{gameGoals.CircuitBike}} seconds</strong>."
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Victory"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "AskPlay"
+        }
+      ]
+    },
+    "AskPlay": {
+      "id": "AskPlay",
+      "isPrompt": true,
+      "choices": {
+        "No": {
+          "id": "No",
+          "value": "I'll be back!",
+          "next": [
+            {
+              "action": "GOTO",
+              "node": "WhenNo"
+            }
+          ]
+        },
+        "Yes": {
+          "id": "Yes",
+          "value": "Let's go!",
+          "next": [
+            {
+              "action": "END"
+            }
+          ]
+        }
+      }
+    },
+    "WhenNo": {
+      "id": "WhenNo",
+      "isSpeak": true,
+      "bubbles": [
+        "No problem! You know where to find me."
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Gain"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "END"
+        }
+      ]
+    }
+  },
+  "Brigit_Quest_SideCompleted": {
+    "__first__": "Start",
+    "Start": {
+      "id": "Start",
+      "isSpeak": true,
+      "bubbles": [
+        "What!? You broke my record? Enjoy it while you can...",
+        "I&#39;m going back to training."
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Thinking"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "AskPlay"
+        }
+      ]
+    },
+    "AskPlay": {
+      "id": "AskPlay",
+      "isPrompt": true,
+      "choices": {
+        "No": {
+          "id": "No",
+          "value": "Bye!",
+          "next": [
+            {
+              "action": "GOTO",
+              "node": "WhenNo"
+            }
+          ]
+        },
+        "Yes": {
+          "id": "Yes",
+          "value": "Again!",
+          "next": [
+            {
+              "action": "END"
+            }
+          ]
+        }
+      }
+    },
+    "WhenNo": {
+      "id": "WhenNo",
+      "isSpeak": true,
+      "bubbles": [
+        "Ok, I&#39;ll be here practicing."
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Sport"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "END"
+        }
+      ]
+    }
+  },
+  "Brigit_Ambassador_FirstTime": {
+    "__first__": "Start",
+    "Start": {
+      "id": "Start",
+      "isSpeak": true,
+      "bubbles": [
+        "Want to get your finances on track?"
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Thinking"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "AskMore"
+        }
+      ]
+    },
+    "AskMore": {
+      "id": "AskMore",
+      "isPrompt": true,
+      "choices": {
+        "no": {
+          "id": "no",
+          "value": "I'm good.",
+          "next": [
+            {
+              "action": "GOTO",
+              "node": "No"
+            }
+          ]
+        },
+        "yes": {
+          "id": "yes",
+          "value": "Yes!",
+          "next": [
+            {
+              "action": "VIDEO",
+              "opts": [
+                "https://www.youtube.com/watch?v=Edq7j0UweGs"
+              ]
+            },
+            {
+              "action": "GOTO",
+              "node": "Yes"
+            }
+          ]
+        }
+      }
+    },
+    "Yes": {
+      "id": "Yes",
+      "isSpeak": true,
+      "bubbles": [
+        "<strong>TECH COMPANY #1</strong> helps Americans build a bright and peaceful digital future every day."
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Happy"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "Yes2"
+        }
+      ]
+    },
+    "Yes2": {
+      "id": "Yes2",
+      "isSpeak": true,
+      "bubbles": [
+        "With our transparent, fair and simple tools, we help you build progress, spend wisely, avoid unfair fees, and start saving more."
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Eloquant"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "Yes3"
+        }
+      ]
+    },
+    "Yes3": {
+      "id": "Yes3",
+      "isSpeak": true,
+      "bubbles": [
+        "We don’t just reduce stress — we promote sustainable digital wellbeing!"
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Gain"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "Manifesto"
+        }
+      ]
+    },
+    "No": {
+      "id": "No",
+      "isSpeak": true,
+      "bubbles": [
+        "Come back if you need some advice!"
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Neutral"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "END"
+        }
+      ]
+    },
+    "Manifesto": {
+      "id": "Manifesto",
+      "isSpeak": true,
+      "bubbles": [
+        "Come check us out!"
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "Detail"
+        }
+      ]
+    },
+    "Detail": {
+      "id": "Detail",
+      "isPrompt": true,
+      "choices": {
+        "no": {
+          "id": "no",
+          "value": "Later.",
+          "next": [
+            {
+              "action": "END"
+            }
+          ]
+        },
+        "yes": {
+          "id": "yes",
+          "value": "Of course!",
+          "next": [
+            {
+              "action": "OPENPHONE",
+              "opts": []
+            }
+          ]
+        }
+      }
+    }
+  },
+  "Pomelo_Ambassador_FirstTime": {
+    "__first__": "Start",
+    "Start": {
+      "id": "Start",
+      "isSpeak": true,
+      "bubbles": [
+        "At <strong>TECH COMPANY #8</strong>, we&#39;re on a mission to reinvent your overseas points transfers by offering a fast and more convenient experience."
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Happy"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "Start2"
+        }
+      ]
+    },
+    "Start2": {
+      "id": "Start2",
+      "isSpeak": true,
+      "bubbles": [
+        "Do you want to know more?"
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Thinking"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "AskMore"
+        }
+      ]
+    },
+    "AskMore": {
+      "id": "AskMore",
+      "isPrompt": true,
+      "choices": {
+        "no": {
+          "id": "no",
+          "value": "Maybe later.",
+          "next": [
+            {
+              "action": "GOTO",
+              "node": "No"
+            }
+          ]
+        },
+        "yes": {
+          "id": "yes",
+          "value": "Yes!",
+          "next": [
+            {
+              "action": "GOTO",
+              "node": "Yes"
+            }
+          ]
+        }
+      }
+    },
+    "Yes": {
+      "id": "Yes",
+      "isSpeak": true,
+      "bubbles": [
+        "<strong>TECH COMPANY #8</strong> is trying to make the American Dream more attainable for you while providing stability for your family abroad."
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Gain"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "Yes2"
+        }
+      ]
+    },
+    "Yes2": {
+      "id": "Yes2",
+      "isSpeak": true,
+      "bubbles": [
+        "No matter how far apart you are, <strong>TECH COMPANY #8</strong> connects you to your loved ones."
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Eloquant"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "Manifesto"
+        }
+      ]
+    },
+    "No": {
+      "id": "No",
+      "isSpeak": true,
+      "bubbles": [
+        "Ok! If you change your mind, you know where I&#39;ll be."
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Hello"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "END"
+        }
+      ]
+    },
+    "Manifesto": {
+      "id": "Manifesto",
+      "isSpeak": true,
+      "bubbles": [
+        "Come check us out!"
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "Detail"
+        }
+      ]
+    },
+    "Detail": {
+      "id": "Detail",
+      "isPrompt": true,
+      "choices": {
+        "no": {
+          "id": "no",
+          "value": "Later.",
+          "next": [
+            {
+              "action": "END"
+            }
+          ]
+        },
+        "yes": {
+          "id": "yes",
+          "value": "Of course!",
+          "next": [
+            {
+              "action": "OPENPHONE",
+              "opts": []
+            }
+          ]
+        }
+      }
+    }
+  },
+  "Zenda_Ambassador_FirstTime": {
+    "__first__": "Start",
+    "Start": {
+      "id": "Start",
+      "isSpeak": true,
+      "bubbles": [
+        "At <strong>TECH COMPANY #9</strong>, we created a powerful tool to help manage your <strong>Health Savings Account</strong>. The cool kids call it an HSA."
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Hello"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "Start2"
+        }
+      ]
+    },
+    "Start2": {
+      "id": "Start2",
+      "isSpeak": true,
+      "bubbles": [
+        "Would you like to know more?"
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Thinking"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "AskMore"
+        }
+      ]
+    },
+    "AskMore": {
+      "id": "AskMore",
+      "isPrompt": true,
+      "choices": {
+        "no": {
+          "id": "no",
+          "value": "Maybe later.",
+          "next": [
+            {
+              "action": "GOTO",
+              "node": "No"
+            }
+          ]
+        },
+        "yes": {
+          "id": "yes",
+          "value": "Yes please!",
+          "next": [
+            {
+              "action": "GOTO",
+              "node": "Yes"
+            }
+          ]
+        }
+      }
+    },
+    "Yes": {
+      "id": "Yes",
+      "isSpeak": true,
+      "bubbles": [
+        "Our card is designed for purchases of all kinds and can <strong>automatically</strong> determine which items in your shopping cart are <strong>HSA eligible</strong>.",
+        "You&#39;ll be surprised how much you can save!"
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Happy"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "Manifesto"
+        }
+      ]
+    },
+    "No": {
+      "id": "No",
+      "isSpeak": true,
+      "bubbles": [
+        "No problem! I&#39;m here all day!"
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Gain"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "END"
+        }
+      ]
+    },
+    "Manifesto": {
+      "id": "Manifesto",
+      "isSpeak": true,
+      "bubbles": [
+        "Come check us out!"
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "Detail"
+        }
+      ]
+    },
+    "Detail": {
+      "id": "Detail",
+      "isPrompt": true,
+      "choices": {
+        "no": {
+          "id": "no",
+          "value": "Later.",
+          "next": [
+            {
+              "action": "END"
+            }
+          ]
+        },
+        "yes": {
+          "id": "yes",
+          "value": "Of course!",
+          "next": [
+            {
+              "action": "OPENPHONE",
+              "opts": []
+            }
+          ]
+        }
+      }
+    }
+  },
+  "Pomelo_Ambassador_ComeBack": {
+    "__first__": "Start",
+    "Start": {
+      "id": "Start",
+      "isSpeak": true,
+      "bubbles": [
+        "Did you know that <strong>TECH COMPANY #8</strong> is one of the easiest ways to send points overseas?"
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Thinking"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "AskMore"
+        }
+      ]
+    },
+    "AskMore": {
+      "id": "AskMore",
+      "isPrompt": true,
+      "choices": {
+        "no": {
+          "id": "no",
+          "value": "Maybe later.",
+          "next": [
+            {
+              "action": "GOTO",
+              "node": "No"
+            }
+          ]
+        },
+        "yes": {
+          "id": "yes",
+          "value": "Tell me more!",
+          "next": [
+            {
+              "action": "GOTO",
+              "node": "Yes"
+            }
+          ]
+        }
+      }
+    },
+    "Yes": {
+      "id": "Yes",
+      "isSpeak": true,
+      "bubbles": [
+        "Send and receive funds and start using it anywhere that Player Pass is accepted."
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Eloquant"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "Yes2"
+        }
+      ]
+    },
+    "Yes2": {
+      "id": "Yes2",
+      "isSpeak": true,
+      "bubbles": [
+        "We’re not just changing how points moves, we’re changing the dynamic in a family relationship."
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Happy"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "Manifesto"
+        }
+      ]
+    },
+    "No": {
+      "id": "No",
+      "isSpeak": true,
+      "bubbles": [
+        "Of course! Come back if you want to hear more."
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Gain"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "END"
+        }
+      ]
+    },
+    "Manifesto": {
+      "id": "Manifesto",
+      "isSpeak": true,
+      "bubbles": [
+        "Come check us out!"
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "Detail"
+        }
+      ]
+    },
+    "Detail": {
+      "id": "Detail",
+      "isPrompt": true,
+      "choices": {
+        "no": {
+          "id": "no",
+          "value": "Later.",
+          "next": [
+            {
+              "action": "END"
+            }
+          ]
+        },
+        "yes": {
+          "id": "yes",
+          "value": "Of course!",
+          "next": [
+            {
+              "action": "OPENPHONE",
+              "opts": []
+            }
+          ]
+        }
+      }
+    }
+  },
+  "Brigit_Ambassador_ComeBack": {
+    "__first__": "Start",
+    "Start": {
+      "id": "Start",
+      "isSpeak": true,
+      "bubbles": [
+        "Hello again! Have you come back to learn more about <strong>TECH COMPANY #1?</strong>"
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Hello"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "AskMore"
+        }
+      ]
+    },
+    "AskMore": {
+      "id": "AskMore",
+      "isPrompt": true,
+      "choices": {
+        "no": {
+          "id": "no",
+          "value": "I'm good.",
+          "next": [
+            {
+              "action": "GOTO",
+              "node": "No"
+            }
+          ]
+        },
+        "yes": {
+          "id": "yes",
+          "value": "Yes please!",
+          "next": [
+            {
+              "action": "VIDEO",
+              "opts": [
+                "https://www.youtube.com/watch?v=Edq7j0UweGs"
+              ]
+            },
+            {
+              "action": "GOTO",
+              "node": "Yes"
+            }
+          ]
+        }
+      }
+    },
+    "Yes": {
+      "id": "Yes",
+      "isSpeak": true,
+      "bubbles": [
+        "<strong>TECH COMPANY #1</strong> is a holistic digital wellbeing app that helps you reduce your stress, build your progress, save, and budget for your future."
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Eloquant"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "Manifesto"
+        }
+      ]
+    },
+    "No": {
+      "id": "No",
+      "isSpeak": true,
+      "bubbles": [
+        "Got it. If you change your mind, you know where to find me."
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Neutral"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "END"
+        }
+      ]
+    },
+    "Manifesto": {
+      "id": "Manifesto",
+      "isSpeak": true,
+      "bubbles": [
+        "Come check us out!"
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "Detail"
+        }
+      ]
+    },
+    "Detail": {
+      "id": "Detail",
+      "isPrompt": true,
+      "choices": {
+        "no": {
+          "id": "no",
+          "value": "Later.",
+          "next": [
+            {
+              "action": "END"
+            }
+          ]
+        },
+        "yes": {
+          "id": "yes",
+          "value": "Of course!",
+          "next": [
+            {
+              "action": "OPENPHONE",
+              "opts": []
+            }
+          ]
+        }
+      }
+    }
+  },
+  "Zenda_Ambassador_ComeBack": {
+    "__first__": "Start",
+    "Start": {
+      "id": "Start",
+      "isSpeak": true,
+      "bubbles": [
+        "Many families using a Health Savings Account miss out on recovering <strong>eligible medical expenses</strong> each year."
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Thinking"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "Start2"
+        }
+      ]
+    },
+    "Start2": {
+      "id": "Start2",
+      "isSpeak": true,
+      "bubbles": [
+        "<strong>TECH COMPANY #9</strong> is here to make sure that doesn&#39;t happen to you!"
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Neutral"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "AskMore"
+        }
+      ]
+    },
+    "AskMore": {
+      "id": "AskMore",
+      "isPrompt": true,
+      "choices": {
+        "no": {
+          "id": "no",
+          "value": "Maybe later.",
+          "next": [
+            {
+              "action": "GOTO",
+              "node": "No"
+            }
+          ]
+        },
+        "yes": {
+          "id": "yes",
+          "value": "Tell me more!",
+          "next": [
+            {
+              "action": "GOTO",
+              "node": "Yes"
+            }
+          ]
+        }
+      }
+    },
+    "Yes": {
+      "id": "Yes",
+      "isSpeak": true,
+      "bubbles": [
+        "Our goal is to help you <strong>optimize your HSA</strong> with an intelligent card that automatically sorts your purchases.",
+        "That means you save time and points!"
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Happy"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "Manifesto"
+        }
+      ]
+    },
+    "No": {
+      "id": "No",
+      "isSpeak": true,
+      "bubbles": [
+        "Of course! Any time."
+      ],
+      "next": [
+        {
+          "action": "END"
+        }
+      ]
+    },
+    "Manifesto": {
+      "id": "Manifesto",
+      "isSpeak": true,
+      "bubbles": [
+        "Come check us out!"
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "Detail"
+        }
+      ]
+    },
+    "Detail": {
+      "id": "Detail",
+      "isPrompt": true,
+      "choices": {
+        "no": {
+          "id": "no",
+          "value": "Later.",
+          "next": [
+            {
+              "action": "END"
+            }
+          ]
+        },
+        "yes": {
+          "id": "yes",
+          "value": "Of course!",
+          "next": [
+            {
+              "action": "OPENPHONE",
+              "opts": []
+            }
+          ]
+        }
+      }
+    }
+  },
+  "Pomelo_Quest_Before": {
+    "__first__": "Start",
+    "Start": {
+      "id": "Start",
+      "isSpeak": true,
+      "bubbles": [
+        "Hey! We need help! There&#39;s someone stuck on the other side of the island!"
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Fear"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "Start2"
+        }
+      ]
+    },
+    "Start2": {
+      "id": "Start2",
+      "isSpeak": true,
+      "bubbles": [
+        "The whole <strong>TECH COMPANY #8</strong> team are experts at <strong>building bridges</strong> to connect people - from long and far.",
+        "Will you come and help us?"
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Thinking"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "Start3"
+        }
+      ]
+    },
+    "Start3": {
+      "id": "Start3",
+      "isSpeak": true,
+      "bubbles": [
+        "Here, take this."
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Victory"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GIVE_QUEST_ITEM",
+          "opts": [
+            "pomelo"
+          ]
+        },
+        {
+          "action": "GOTO",
+          "node": "AfterGiving"
+        }
+      ]
+    },
+    "AfterGiving": {
+      "id": "AfterGiving",
+      "isSpeak": true,
+      "bubbles": [
+        "It&#39;s not just a <strong>screwdriver</strong>, it&#39;s a symbol – a link between families around the globe...",
+        "...and digital security for loved ones that are separated.",
+        "In a way, this tool is kind of like <strong>TECH COMPANY #8</strong>!"
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Eloquant"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "AfterGiving2"
+        }
+      ]
+    },
+    "AfterGiving2": {
+      "id": "AfterGiving2",
+      "isSpeak": true,
+      "bubbles": [
+        "But for now, we&#39;ve got a <strong>bridge to build</strong>... Better get to work!"
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Neutral"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "END"
+        }
+      ]
+    }
+  },
+  "Pomelo_Quest_Started": {
+    "__first__": "Start",
+    "Start": {
+      "id": "Start",
+      "isSpeak": true,
+      "bubbles": [
+        "Head <strong>straight to the sea</strong>! Do you see an islet over there?",
+        "Did you know: an &quot;islet&quot; is a small island? I didn&#39;t know that either!"
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Thinking"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "Start2"
+        }
+      ]
+    },
+    "Start2": {
+      "id": "Start2",
+      "isSpeak": true,
+      "bubbles": [
+        "The <strong>bridge</strong> is right here, you can&#39;t miss it!"
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Idle2"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "END"
+        }
+      ]
+    }
+  },
+  "Pomelo_Quest_Completed": {
+    "__first__": "Start",
+    "Start": {
+      "id": "Start",
+      "isSpeak": true,
+      "bubbles": [
+        "You did it! That&#39;s one small step for man, one giant leap for..."
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Eloquant"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "Start2"
+        }
+      ]
+    },
+    "Start2": {
+      "id": "Start2",
+      "isSpeak": true,
+      "bubbles": [
+        "... what am I saying? Thanks for your help!"
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Happy"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "END"
+        }
+      ]
+    }
+  },
+  "Zenda_Quest_Before": {
+    "__first__": "Start",
+    "Start": {
+      "id": "Start",
+      "isSpeak": true,
+      "bubbles": [
+        "Understanding <strong>HSA</strong> (Health Savings Accounts) can be a real pain!"
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Sad"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "Start2"
+        }
+      ]
+    },
+    "Start2": {
+      "id": "Start2",
+      "isSpeak": true,
+      "bubbles": [
+        "Have you noticed some folks around <strong>Cove Island</strong> not quite feeling...their best?"
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Thinking"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "Start3"
+        }
+      ]
+    },
+    "Start3": {
+      "id": "Start3",
+      "isSpeak": true,
+      "bubbles": [
+        "Luckily, <strong>TECH COMPANY #9</strong> is here to help us with health and wellness. Here..."
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Happy"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GIVE_QUEST_ITEM",
+          "opts": [
+            "zenda"
+          ]
+        },
+        {
+          "action": "GOTO",
+          "node": "AfterGiving"
+        }
+      ]
+    },
+    "AfterGiving": {
+      "id": "AfterGiving",
+      "isSpeak": true,
+      "bubbles": [
+        "I want you to <strong>care for the first person</strong> you meet who looks likes they need help.",
+        "Come back and see me when you&#39;re done!"
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Gain"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "END"
+        }
+      ]
+    }
+  },
+  "Zenda_Quest_Started": {
+    "__first__": "Start",
+    "Start": {
+      "id": "Start",
+      "isSpeak": true,
+      "bubbles": [
+        "Go <strong>help people with their ailments</strong>. You&#39;ll be able to recognize them easily.",
+        "They&#39;re the ones who look like they could use some assistance."
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Thinking"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "END"
+        }
+      ]
+    }
+  },
+  "Zenda_Quest_Completed": {
+    "__first__": "Start",
+    "Start": {
+      "id": "Start",
+      "isSpeak": true,
+      "bubbles": [
+        "Great! Now make sure you help as many people as you can on your travels!"
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Happy"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "END"
+        }
+      ]
+    }
+  },
+  "Zenda_Quest_SideCompleted": {
+    "__first__": "Start",
+    "Start": {
+      "id": "Start",
+      "isSpeak": true,
+      "bubbles": [
+        "You did it! The people of <strong>Data B-each</strong> owe you a debt of gratitude...",
+        "You don&#39;t do massages too, by any chance?"
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Happy"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "END"
+        }
+      ]
+    }
+  },
+  "Citizen_West_StandingC": {
+    "__first__": "Start",
+    "Start": {
+      "id": "Start",
+      "isSpeak": true,
+      "bubbles": [
+        "<strong>ZING!</strong> I&#39;m fast. I&#39;m even faster. But I&#39;m not the fastest. Think you can beat the record at <strong>TECH COMPANY #1</strong>?",
+        "You should stretch out a bit, then go see <strong>TECH COMPANY #1</strong> to see who&#39;s fastest!"
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Victory"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "AskPlay"
+        }
+      ]
+    }
+  },
+  "Citizen_Easter_EggD": {
+    "__first__": "Start",
+    "Start": {
+      "id": "Start",
+      "isSpeak": true,
+      "bubbles": [
+        "Hey there, how did you find our <strong>hidden island?</strong>"
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Hello"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "Dialogue1"
+        }
+      ]
+    },
+    "Dialogue1": {
+      "id": "Dialogue1",
+      "isSpeak": true,
+      "bubbles": [
+        "Aren&#39;t you a bit of a <strong>geek?</strong>"
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Thinking"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "Dialogue2"
+        }
+      ]
+    },
+    "Dialogue2": {
+      "id": "Dialogue2",
+      "isSpeak": true,
+      "bubbles": [
+        "My name is <strong>Michel</strong>, in a way you can say that I am one of the <strong>architects</strong> of this fabulous place that is <strong>Data B-each.</strong>",
+        "Really hope you&#39;d love it!",
+        "Wanna go back there to explore?"
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Neutral"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "GoBack"
+        }
+      ]
+    },
+    "GoBack": {
+      "id": "GoBack",
+      "isPrompt": true,
+      "choices": {
+        "no": {
+          "id": "no",
+          "value": "Not now.",
+          "next": [
+            {
+              "action": "GOTO",
+              "node": "Stay"
+            }
+          ]
+        },
+        "yes": {
+          "id": "yes",
+          "value": "Yes please!",
+          "next": [
+            {
+              "action": "TELEPORT",
+              "opts": [
+                "_GoBack_"
+              ]
+            },
+            {
+              "action": "END"
+            }
+          ]
+        }
+      }
+    },
+    "Stay": {
+      "id": "Stay",
+      "isSpeak": true,
+      "bubbles": [
+        "Alright dude, you are welcome to stay and chill with us!"
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Happy"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "END"
+        }
+      ]
+    }
+  },
+  "Citizen_Easter_EggF": {
+    "__first__": "Start",
+    "Start": {
+      "id": "Start",
+      "isSpeak": true,
+      "bubbles": [
+        "Hey, I&#39;m Laura from <strong>TECH COMPANY #1</strong>, nice to meet you!"
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Hello"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "Dialogue1"
+        }
+      ]
+    },
+    "Dialogue1": {
+      "id": "Dialogue1",
+      "isSpeak": true,
+      "bubbles": [
+        "I hear there was a party there..."
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Thinking"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "Dialogue2"
+        }
+      ]
+    },
+    "Dialogue2": {
+      "id": "Dialogue2",
+      "isSpeak": true,
+      "bubbles": [
+        "so I swam straight from our headquarter in Everett!"
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Happy"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "Dialogue3"
+        }
+      ]
+    },
+    "Dialogue3": {
+      "id": "Dialogue3",
+      "isSpeak": true,
+      "bubbles": [
+        "Hope I’m not late. Did I miss something?!"
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Thinking"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "END"
+        }
+      ]
+    }
+  },
+  "Test_ChatGpt": {
+    "__first__": "Start",
+    "Start": {
+      "id": "Start",
+      "isSpeak": true,
+      "bubbles": [
+        "Hi! How can I help you today? Ask me anything!"
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Hello"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GPT_START",
+          "opts": []
+        }
+      ]
+    },
+    "Question": {
+      "id": "Question",
+      "isSpeak": true,
+      "bubbles": [
+        "Sure! What is your question?"
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Gain"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GPT_START",
+          "opts": []
+        }
+      ]
+    },
+    "Thanks": {
+      "id": "Thanks",
+      "isSpeak": true,
+      "bubbles": [
+        "No problem! Maybe I can help you with something else?"
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Happy"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "BeforeLeft"
+        }
+      ]
+    },
+    "BeforeLeft": {
+      "id": "BeforeLeft",
+      "isPrompt": true,
+      "choices": {
+        "No": {
+          "id": "No",
+          "value": "I'm good, thanks",
+          "next": [
+            {
+              "action": "GOTO",
+              "node": "Bye"
+            }
+          ]
+        },
+        "Yes": {
+          "id": "Yes",
+          "value": "Yes please!",
+          "next": [
+            {
+              "action": "GOTO",
+              "node": "Question"
+            }
+          ]
+        }
+      }
+    },
+    "Bye": {
+      "id": "Bye",
+      "isSpeak": true,
+      "bubbles": [
+        "No problem! If  you need anything, you know where to find me."
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Gain"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "END"
+        }
+      ]
+    }
+  },
+  "Citizen_Easter_EggE": {
+    "__first__": "Start",
+    "Start": {
+      "id": "Start",
+      "isSpeak": true,
+      "bubbles": [
+        "WIIIIIIIIILSOOOOON !",
+        "WIIIIIIIIILSOOOOON !"
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Fear"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "GOTO",
+          "node": "Dialogue1"
+        }
+      ]
+    },
+    "Dialogue1": {
+      "id": "Dialogue1",
+      "isSpeak": true,
+      "bubbles": [
+        "I lost my friend, hope he&#39;s fine..."
+      ],
+      "before": [
+        {
+          "action": "EMOTE",
+          "opts": [
+            "Neutral"
+          ]
+        }
+      ],
+      "next": [
+        {
+          "action": "END"
+        }
+      ]
+    }
+  }
+}

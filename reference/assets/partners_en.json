@@ -1,0 +1,100 @@
+{
+  "partners": {
+    "brigit": {
+      "id": "brigit",
+      "isHidden": false,
+      "name": "TECH COMPANY #1",
+      "description": "<strong>TECH COMPANY #1</strong> - A playful technology team building digital tools for curious explorers.",
+      "url": null,
+      "hasForm": false,
+      "tags": [
+        "Build",
+        "Explore",
+        "Create",
+        "Connect"
+      ],
+      "textA": "TECH COMPANY #1 builds playful tools that help people learn, create, and connect.",
+      "video": null,
+      "textB": "Explore TECH COMPANY #1 and try the activity.",
+      "news": "TECH COMPANY #1 is an independent technology company.",
+      "ctaText": "Explore",
+      "ctaUrl": null,
+      "colors": {
+        "primary": "#ffffff",
+        "secondary": "#67D389"
+      }
+    },
+    "aven": {
+      "id": "aven",
+      "isHidden": false,
+      "name": "TECH COMPANY #3",
+      "description": "<strong>TECH COMPANY #3</strong> - A playful technology team building digital tools for curious explorers.",
+      "url": null,
+      "hasForm": false,
+      "tags": [
+        "Build",
+        "Explore",
+        "Create",
+        "Connect"
+      ],
+      "textA": "TECH COMPANY #3 builds playful tools that help people learn, create, and connect.",
+      "video": null,
+      "textB": "Explore TECH COMPANY #3 and try the activity.",
+      "news": "TECH COMPANY #3 is an independent technology company.",
+      "ctaText": "Explore",
+      "ctaUrl": null,
+      "colors": {
+        "primary": "#000000",
+        "secondary": "#C1C1C1"
+      }
+    },
+    "pomelo": {
+      "id": "pomelo",
+      "isHidden": false,
+      "name": "TECH COMPANY #8",
+      "description": "<strong>TECH COMPANY #8</strong> - A playful technology team building digital tools for curious explorers.",
+      "url": null,
+      "hasForm": false,
+      "tags": [
+        "Build",
+        "Explore",
+        "Create",
+        "Connect"
+      ],
+      "textA": "TECH COMPANY #8 builds playful tools that help people learn, create, and connect.",
+      "video": null,
+      "textB": "Explore TECH COMPANY #8 and try the activity.",
+      "news": "TECH COMPANY #8 is an independent technology company.",
+      "ctaText": "Explore",
+      "ctaUrl": null,
+      "colors": {
+        "primary": "#f04679",
+        "secondary": "#02b198"
+      }
+    },
+    "zenda": {
+      "id": "zenda",
+      "isHidden": false,
+      "name": "TECH COMPANY #9",
+      "description": "<strong>TECH COMPANY #9</strong> - A playful technology team building digital tools for curious explorers.",
+      "url": null,
+      "hasForm": false,
+      "tags": [
+        "Build",
+        "Explore",
+        "Create",
+        "Connect"
+      ],
+      "textA": "TECH COMPANY #9 builds playful tools that help people learn, create, and connect.",
+      "video": null,
+      "textB": "Explore TECH COMPANY #9 and try the activity.",
+      "news": "TECH COMPANY #9 is an independent technology company.",
+      "ctaText": "Explore",
+      "ctaUrl": null,
+      "colors": {
+        "primary": "#64B2E8",
+        "secondary": "#72C1F6"
+      }
+    }
+  }
+}

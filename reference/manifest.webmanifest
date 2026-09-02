@@ -1,0 +1,22 @@
+{
+  "short_name": "Data B-each",
+  "name": "Data B-each - A Playful Island Adventure",
+  "description": "Explore Data B-each, meet TECH COMPANY teams, and discover playful technology activities.",
+  "start_url": "/",
+  "background_color": "#081a3a",
+  "theme_color": "#16b9d4",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icons/icon_192.png?v=databeach",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/icons/icon_512.png?v=databeach",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "display": "fullscreen"
+}
