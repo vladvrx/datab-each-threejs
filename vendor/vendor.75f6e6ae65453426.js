@@ -33740,8 +33740,7 @@ const GU = [["router", function (e = {}) {
         QuestProgress: {
           component: VueNotifQuestProgressComponent,
           type: "progress",
-          isBottomNotif: !e,
-          isTopNotif: !!e,
+          isBottomNotif: !0,
           test({
             quest: e,
             progress: t
@@ -33764,13 +33763,12 @@ const GU = [["router", function (e = {}) {
         ChestOpen: {
           component: VueNotifChestOpenComponent,
           type: "dataPoints",
-          isBottomNotif: !e,
-          isTopNotif: !!e
+          isBottomNotif: !0
         },
         Hint: {
           component: VueNotifHintComponent,
           type: "hint",
-          isTopNotif: !0
+          isBottomNotif: !0
         }
       };
     }(),
