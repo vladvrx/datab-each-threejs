@@ -19144,7 +19144,7 @@
           0,
           0.956827
         ],
-        "FintechSpawnPomelo.001": [
+        "FintechSpawnPylon.001": [
           -144.80751,
           3.400204,
           23.634537,
@@ -19156,7 +19156,7 @@
           -0.00498,
           0.354695
         ],
-        "FintechSpawnZenda.001": [
+        "FintechSpawnSalve.001": [
           -89.491516,
           3.604354,
           56.093676,
@@ -19168,7 +19168,7 @@
           -0.002755,
           0.133893
         ],
-        "FintechSpawnBrigit.001": [
+        "FintechSpawnTrail.001": [
           -64.348121,
           10.964539,
           105.459394,
@@ -19180,7 +19180,7 @@
           0.023833,
           0.5297
         ],
-        "FintechSpawnAven.001": [
+        "FintechSpawnCobble.001": [
           -42.36013200000001,
           2.905344,
           168.22311200000001,
@@ -19978,10 +19978,10 @@
         "BoxCar",
         "Wall",
         "HouseCabinC",
-        "StandBrigit",
+        "StandA",
         "SolidGroundRoundB",
-        "StandPomelo",
-        "StandZenda",
+        "StandA",
+        "StandA",
         "TreeRoundB",
         "HouseBlackA",
         "HouseBlackB",
@@ -19996,7 +19996,7 @@
         "TruckFood",
         "SurfShop",
         "BeachBar",
-        "StandAven",
+        "StandA",
         "TreeSquareA",
         "StairsC",
         "CoffeeShop",
@@ -20150,10 +20150,10 @@
           ]
         },
         {
-          "uid": "NPC_Pomelo_Ambassador.001",
+          "uid": "NPC_Pylon_Ambassador.001",
           "type": "NPC",
           "params": {
-            "subtype": "Pomelo_Ambassador"
+            "subtype": "Pylon_Ambassador"
           },
           "transforms": [
             -146.705948,
@@ -20169,10 +20169,10 @@
           ]
         },
         {
-          "uid": "NPC_Pomelo_Quest.001",
+          "uid": "NPC_Pylon_Quest.001",
           "type": "NPC",
           "params": {
-            "subtype": "Pomelo_Quest"
+            "subtype": "Pylon_Quest"
           },
           "transforms": [
             -157.71669,
@@ -20228,10 +20228,10 @@
           ]
         },
         {
-          "uid": "NPC_Zenda_Sick_WestA.001",
+          "uid": "NPC_Salve_Sick_WestA.001",
           "type": "NPC",
           "params": {
-            "subtype": "Zenda_Sick_WestA",
+            "subtype": "Salve_Sick_WestA",
             "move": "radius=2.5"
           },
           "transforms": [
@@ -20364,10 +20364,10 @@
           ]
         },
         {
-          "uid": "NPC_Brigit_Ambassador.001",
+          "uid": "NPC_Trail_Ambassador.001",
           "type": "NPC",
           "params": {
-            "subtype": "Brigit_Ambassador"
+            "subtype": "Trail_Ambassador"
           },
           "transforms": [
             -70.39961600000001,
@@ -20383,10 +20383,10 @@
           ]
         },
         {
-          "uid": "NPC_Brigit_Quest.001",
+          "uid": "NPC_Trail_Quest.001",
           "type": "NPC",
           "params": {
-            "subtype": "Brigit_Quest"
+            "subtype": "Trail_Quest"
           },
           "transforms": [
             -59.98957800000001,
@@ -20402,10 +20402,10 @@
           ]
         },
         {
-          "uid": "NPC_Zenda_Ambassador.001",
+          "uid": "NPC_Salve_Ambassador.001",
           "type": "NPC",
           "params": {
-            "subtype": "Zenda_Ambassador"
+            "subtype": "Salve_Ambassador"
           },
           "transforms": [
             -89.644676,
@@ -20421,10 +20421,10 @@
           ]
         },
         {
-          "uid": "NPC_Zenda_Quest.001",
+          "uid": "NPC_Salve_Quest.001",
           "type": "NPC",
           "params": {
-            "subtype": "Zenda_Quest"
+            "subtype": "Salve_Quest"
           },
           "transforms": [
             -79.20296400000001,
@@ -20440,10 +20440,10 @@
           ]
         },
         {
-          "uid": "NPC_Zenda_Sick_WestD.001",
+          "uid": "NPC_Salve_Sick_WestD.001",
           "type": "NPC",
           "params": {
-            "subtype": "Zenda_Sick_WestD"
+            "subtype": "Salve_Sick_WestD"
           },
           "transforms": [
             -116.45475,
@@ -20479,10 +20479,10 @@
           ]
         },
         {
-          "uid": "NPC_Aven_Ambassador.001",
+          "uid": "NPC_Cobble_Ambassador.001",
           "type": "NPC",
           "params": {
-            "subtype": "Aven_Ambassador"
+            "subtype": "Cobble_Ambassador"
           },
           "transforms": [
             -43.20383400000001,
@@ -20517,10 +20517,10 @@
           ]
         },
         {
-          "uid": "NPC_Aven_Quest.001",
+          "uid": "NPC_Cobble_Quest.001",
           "type": "NPC",
           "params": {
-            "subtype": "Aven_Quest"
+            "subtype": "Cobble_Quest"
           },
           "transforms": [
             -53.16564100000001,
@@ -20652,10 +20652,10 @@
           ]
         },
         {
-          "uid": "NPC_Citizen_West_PomeloIslandHint.001",
+          "uid": "NPC_Citizen_West_PylonIslandHint.001",
           "type": "NPC",
           "params": {
-            "subtype": "Citizen_West_PomeloIslandHint",
+            "subtype": "Citizen_West_PylonIslandHint",
             "move": "radius=5"
           },
           "transforms": [
@@ -20842,8 +20842,8 @@
           ]
         },
         {
-          "uid": "AvenHouse.004",
-          "type": "AvenHouse",
+          "uid": "CobbleHouse.004",
+          "type": "CobbleHouse",
           "params": {},
           "transforms": [
             -64.20283900000001,
@@ -20859,8 +20859,8 @@
           ]
         },
         {
-          "uid": "AvenHouse.005",
-          "type": "AvenHouse",
+          "uid": "CobbleHouse.005",
+          "type": "CobbleHouse",
           "params": {},
           "transforms": [
             12.771865999999992,
@@ -20876,8 +20876,8 @@
           ]
         },
         {
-          "uid": "AvenHouse.006",
-          "type": "AvenHouse",
+          "uid": "CobbleHouse.006",
+          "type": "CobbleHouse",
           "params": {},
           "transforms": [
             -39.71268400000001,
@@ -20893,8 +20893,8 @@
           ]
         },
         {
-          "uid": "AvenHouse.007",
-          "type": "AvenHouse",
+          "uid": "CobbleHouse.007",
+          "type": "CobbleHouse",
           "params": {},
           "transforms": [
             -121.777961,
@@ -21050,10 +21050,10 @@
           ]
         },
         {
-          "uid": "NPC_Zenda_Sick_WestC.001",
+          "uid": "NPC_Salve_Sick_WestC.001",
           "type": "NPC",
           "params": {
-            "subtype": "Zenda_Sick_WestC",
+            "subtype": "Salve_Sick_WestC",
             "move": "radius=3.3"
           },
           "transforms": [
@@ -21130,7 +21130,7 @@
           "uid": "FintechStandGround.004",
           "type": "FintechStandGround",
           "params": {
-            "fintech": "zenda"
+            "fintech": "salve"
           },
           "transforms": [
             -86.218574,
@@ -21149,7 +21149,7 @@
           "uid": "FintechStandGround.005",
           "type": "FintechStandGround",
           "params": {
-            "fintech": "brigit"
+            "fintech": "trail"
           },
           "transforms": [
             -74.70890800000001,
@@ -21168,7 +21168,7 @@
           "uid": "FintechStandGround.006",
           "type": "FintechStandGround",
           "params": {
-            "fintech": "aven"
+            "fintech": "cobble"
           },
           "transforms": [
             -46.51503300000001,
@@ -24233,7 +24233,7 @@
           ]
         },
         {
-          "asset": "StandBrigit",
+          "asset": "StandA",
           "traversable": false,
           "transforms": [
             -75.86207545214845,
@@ -24425,7 +24425,7 @@
           ]
         },
         {
-          "asset": "StandPomelo",
+          "asset": "StandA",
           "traversable": false,
           "transforms": [
             -153.0735164921875,
@@ -24457,7 +24457,7 @@
           ]
         },
         {
-          "asset": "StandZenda",
+          "asset": "StandA",
           "traversable": false,
           "transforms": [
             -86.31586420947266,
@@ -25769,7 +25769,7 @@
           ]
         },
         {
-          "asset": "StandAven",
+          "asset": "StandA",
           "traversable": false,
           "transforms": [
             -46.7982822697754,
@@ -38467,10 +38467,10 @@
     }
   },
   "quests_en": {
-    "AvenMain": {
-      "id": "AvenMain",
+    "CobbleMain": {
+      "id": "CobbleMain",
       "type": "Fintech",
-      "icon": "fintech-aven",
+      "icon": "interactions-hammer",
       "item": "Hammer",
       "title": "TECH COMPANY #3",
       "description": "Talk with TECH COMPANY #3<br>to renovate a house.",
@@ -38478,14 +38478,14 @@
       "unlockCondition": "",
       "reward": 20,
       "rewardItem": null,
-      "rewardText": "<strong>Well done!</strong> There are <strong>{{actorCounts.AvenHouse - 1}} other houses</strong> to find on the islands. Renovate them to unlock more glorb Points.",
+      "rewardText": "<strong>Well done!</strong> There are <strong>{{actorCounts.CobbleHouse - 1}} other houses</strong> to find on the islands. Renovate them to unlock more glorb Points.",
       "rewardCondition": "$hasHammer && $builtHouseCount >= 1",
-      "fintechID": "aven"
+      "fintechID": "cobble"
     },
-    "BrigitMain": {
-      "id": "BrigitMain",
+    "TrailMain": {
+      "id": "TrailMain",
       "type": "Fintech",
-      "icon": "fintech-brigit",
+      "icon": "misc-bike",
       "item": null,
       "title": "TECH COMPANY #1",
       "description": "Talk with TECH COMPANY #1<br>and participate in a<br>bike race.",
@@ -38495,12 +38495,12 @@
       "rewardItem": null,
       "rewardText": "<strong>Congratulations!</strong> Come back anytime and finish your lap in <strong>less than {{gameGoals.CircuitBike}} seconds</strong> to unlock more glorb Points.",
       "rewardCondition": "$hasPlayedCircuitBike",
-      "fintechID": "brigit"
+      "fintechID": "trail"
     },
-    "PomeloMain": {
-      "id": "PomeloMain",
+    "PylonMain": {
+      "id": "PylonMain",
       "type": "Fintech",
-      "icon": "fintech-pomelo",
+      "icon": "interactions-screwdriver",
       "item": "Screwdriver",
       "title": "TECH COMPANY #8",
       "description": "Talk with TECH COMPANY #8<br>to build the bridge.",
@@ -38510,12 +38510,12 @@
       "rewardItem": null,
       "rewardText": "<strong>Nice!</strong> Keep your eyes open, there are chests on the island, next to the house.",
       "rewardCondition": "$hasScrewdriver && $isBridgeRepaired",
-      "fintechID": "pomelo"
+      "fintechID": "pylon"
     },
-    "ZendaMain": {
-      "id": "ZendaMain",
+    "SalveMain": {
+      "id": "SalveMain",
       "type": "Fintech",
-      "icon": "fintech-zenda",
+      "icon": "interactions-stethoscope",
       "item": "Stethoscope",
       "title": "TECH COMPANY #9",
       "description": "Talk with TECH COMPANY #9,<br>and aid someone in pain.",
@@ -38525,52 +38525,52 @@
       "rewardItem": null,
       "rewardText": "<strong>So nice!</strong> There is <strong>{{actorCounts.CitizenSick - 1}} other people</strong> that need assistance on the islands. Help them and you&#39;ll be rewarded with more glorb Points!",
       "rewardCondition": "$hasStethoscope && $healedCitizenCount >= 1",
-      "fintechID": "zenda"
+      "fintechID": "salve"
     },
-    "AvenSide": {
-      "id": "AvenSide",
+    "CobbleSide": {
+      "id": "CobbleSide",
       "type": "Side",
       "icon": "interactions-hammer",
       "item": null,
       "title": "Restore houses",
       "description": "Renovate all the houses",
       "unlockText": "Complete TECH COMPANY #3&#39;s quest",
-      "unlockCondition": "$$quests.AvenMain && $hasHammer",
+      "unlockCondition": "$$quests.CobbleMain && $hasHammer",
       "reward": 50,
       "rewardItem": null,
       "rewardText": "Help renovate the houses",
-      "rewardCondition": "$builtHouseCount [===] #actorCounts.AvenHouse",
-      "fintechID": "aven"
+      "rewardCondition": "$builtHouseCount [===] #actorCounts.CobbleHouse",
+      "fintechID": "cobble"
     },
-    "BrigitSide": {
-      "id": "BrigitSide",
+    "TrailSide": {
+      "id": "TrailSide",
       "type": "Side",
       "icon": "misc-bike",
       "item": null,
       "title": "Bike Race",
       "description": "Complete the bike race in under {{gameGoals.CircuitBike}}s.",
       "unlockText": "Complete TECH COMPANY #1&#39;s quest",
-      "unlockCondition": "$$quests.BrigitMain && $hasPlayedCircuitBike",
+      "unlockCondition": "$$quests.TrailMain && $hasPlayedCircuitBike",
       "reward": 50,
       "rewardItem": null,
       "rewardText": "Complete the bike race in under {{gameGoals.CircuitBike}}s.",
       "rewardCondition": "$gameCircuitBikeTime > 0 && $gameCircuitBikeTime <= #gameGoals.CircuitBike",
-      "fintechID": "brigit"
+      "fintechID": "trail"
     },
-    "ZendaSide": {
-      "id": "ZendaSide",
+    "SalveSide": {
+      "id": "SalveSide",
       "type": "Side",
       "icon": "interactions-stethoscope",
       "item": null,
       "title": "Help people in pain",
       "description": "Help all the people in pain",
       "unlockText": "Complete TECH COMPANY #9&#39;s quest",
-      "unlockCondition": "$$quests.ZendaMain && $hasStethoscope",
+      "unlockCondition": "$$quests.SalveMain && $hasStethoscope",
       "reward": 50,
       "rewardItem": null,
       "rewardText": "Help the people in pain",
       "rewardCondition": "$healedCitizenCount [===] #actorCounts.CitizenSick",
-      "fintechID": "zenda"
+      "fintechID": "salve"
     }
   },
   "characters_en": {
@@ -38584,97 +38584,97 @@
           "point": "PortSpawnB"
         }
       },
-      "Aven_Quest": {
+      "Cobble_Quest": {
         "gradientID": 2,
         "face": 0,
         "script": "Quest",
         "scriptArgs": {
-          "fintech": "aven"
+          "fintech": "cobble"
         }
       },
-      "Aven_Ambassador": {
+      "Cobble_Ambassador": {
         "gradientID": 2,
         "face": 0,
         "script": "Ambassador",
         "scriptArgs": {
-          "fintech": "aven",
+          "fintech": "cobble",
           "animation": "Idle2"
         }
       },
-      "Brigit_Quest": {
+      "Trail_Quest": {
         "gradientID": 3,
         "face": 1,
         "script": "MiniGame",
         "scriptArgs": {
           "scene": "CircuitBike",
-          "fintech": "brigit",
+          "fintech": "trail",
           "animation": "Thinking"
         }
       },
-      "Brigit_Ambassador": {
+      "Trail_Ambassador": {
         "gradientID": 3,
         "face": 0,
         "script": "Ambassador",
         "scriptArgs": {
-          "fintech": "brigit",
+          "fintech": "trail",
           "animation": "Idle2"
         }
       },
-      "Pomelo_Quest": {
+      "Pylon_Quest": {
         "gradientID": 7,
         "face": 0,
         "script": "Quest",
         "scriptArgs": {
-          "fintech": "pomelo",
+          "fintech": "pylon",
           "animation": "Thinking"
         }
       },
-      "Pomelo_Ambassador": {
+      "Pylon_Ambassador": {
         "gradientID": 7,
         "face": 1,
         "script": "Ambassador",
         "scriptArgs": {
-          "fintech": "pomelo",
+          "fintech": "pylon",
           "animation": "Idle2"
         }
       },
-      "Zenda_Quest": {
+      "Salve_Quest": {
         "gradientID": 10,
         "face": 1,
         "script": "Quest",
         "scriptArgs": {
-          "fintech": "zenda",
+          "fintech": "salve",
           "animation": "Thinking"
         }
       },
-      "Zenda_Ambassador": {
+      "Salve_Ambassador": {
         "gradientID": 10,
         "face": 1,
         "script": "Ambassador",
         "scriptArgs": {
-          "fintech": "zenda",
+          "fintech": "salve",
           "animation": "Idle2"
         }
       },
-      "Zenda_Sick_WestA": {
+      "Salve_Sick_WestA": {
         "gradientID": 26,
         "face": 0,
-        "script": "ZendaSick",
+        "script": "SalveSick",
         "scriptArgs": {}
       },
-      "Zenda_Sick_WestC": {
+      "Salve_Sick_WestC": {
         "gradientID": 26,
         "face": 0,
-        "script": "ZendaSick",
+        "script": "SalveSick",
         "scriptArgs": {}
       },
-      "Zenda_Sick_WestD": {
+      "Salve_Sick_WestD": {
         "gradientID": 26,
         "face": 0,
-        "script": "ZendaSick",
+        "script": "SalveSick",
         "scriptArgs": {}
       },
-      "Citizen_West_PomeloIslandHint": {
+      "Citizen_West_PylonIslandHint": {
         "gradientID": 22,
         "face": 0,
         "script": "TalkingCitizen",
@@ -38891,10 +38891,10 @@
       "aspiration": {
         "gradientID": 1
       },
-      "aven": {
+      "cobble": {
         "gradientID": 2
       },
-      "brigit": {
+      "trail": {
         "gradientID": 3
       },
       "till": {
@@ -38906,7 +38906,7 @@
       "prosper": {
         "gradientID": 6
       },
-      "pomelo": {
+      "pylon": {
         "gradientID": 7
       },
       "one": {
@@ -38915,7 +38915,7 @@
       "kikoff": {
         "gradientID": 9
       },
-      "zenda": {
+      "salve": {
         "gradientID": 10
       },
       "bluevine": {
@@ -39093,7 +39093,7 @@
         ]
       }
     },
-    "Aven_Quest_Before": {
+    "Cobble_Quest_Before": {
       "__first__": "Start",
       "Start": {
         "id": "Start",
@@ -39114,7 +39114,7 @@
           {
             "action": "GIVE_QUEST_ITEM",
             "opts": [
-              "aven"
+              "cobble"
             ]
           },
           {
@@ -39165,7 +39165,7 @@
         ]
       }
     },
-    "Aven_Quest_Started": {
+    "Cobble_Quest_Started": {
       "__first__": "Start",
       "Start": {
         "id": "Start",
@@ -39188,7 +39188,7 @@
         ]
       }
     },
-    "Aven_Quest_Completed": {
+    "Cobble_Quest_Completed": {
       "__first__": "Start",
       "Start": {
         "id": "Start",
@@ -39212,7 +39212,7 @@
         ]
       }
     },
-    "Aven_Ambassador_FirstTime": {
+    "Cobble_Ambassador_FirstTime": {
       "__first__": "Start",
       "Start": {
         "id": "Start",
@@ -39384,7 +39384,7 @@
         }
       }
     },
-    "Zenda_Healed": {
+    "Salve_Healed": {
       "__first__": "Thanks",
       "Thanks": {
         "id": "Thanks",
@@ -39405,7 +39405,7 @@
         ]
       }
     },
-    "Aven_Ambassador_ComeBack": {
+    "Cobble_Ambassador_ComeBack": {
       "__first__": "Start",
       "Start": {
         "id": "Start",
@@ -39534,7 +39534,7 @@
         }
       }
     },
-    "Aven_Quest_SideCompleted": {
+    "Cobble_Quest_SideCompleted": {
       "__first__": "Start",
       "Start": {
         "id": "Start",
@@ -39557,7 +39557,7 @@
         ]
       }
     },
-    "Citizen_West_PomeloIslandHint": {
+    "Citizen_West_PylonIslandHint": {
       "__first__": "Start",
       "Start": {
         "id": "Start",
@@ -39841,7 +39841,7 @@
         ]
       }
     },
-    "Brigit_Quest_FirstTime": {
+    "Trail_Quest_FirstTime": {
       "__first__": "Start",
       "Start": {
         "id": "Start",
@@ -39952,7 +39952,7 @@
         ]
       }
     },
-    "Brigit_Quest_ComeBack": {
+    "Trail_Quest_ComeBack": {
       "__first__": "Start",
       "Start": {
         "id": "Start",
@@ -40021,7 +40021,7 @@
         ]
       }
     },
-    "Brigit_Quest_BeforeSide": {
+    "Trail_Quest_BeforeSide": {
       "__first__": "Start",
       "Start": {
         "id": "Start",
@@ -40091,7 +40091,7 @@
         ]
       }
     },
-    "Brigit_Quest_SideCompleted": {
+    "Trail_Quest_SideCompleted": {
       "__first__": "Start",
       "Start": {
         "id": "Start",
@@ -40161,7 +40161,7 @@
         ]
       }
     },
-    "Brigit_Ambassador_FirstTime": {
+    "Trail_Ambassador_FirstTime": {
       "__first__": "Start",
       "Start": {
         "id": "Start",
@@ -40338,7 +40338,7 @@
         }
       }
     },
-    "Pomelo_Ambassador_FirstTime": {
+    "Pylon_Ambassador_FirstTime": {
       "__first__": "Start",
       "Start": {
         "id": "Start",
@@ -40509,7 +40509,7 @@
         }
       }
     },
-    "Zenda_Ambassador_FirstTime": {
+    "Salve_Ambassador_FirstTime": {
       "__first__": "Start",
       "Start": {
         "id": "Start",
@@ -40660,7 +40660,7 @@
         }
       }
     },
-    "Pomelo_Ambassador_ComeBack": {
+    "Pylon_Ambassador_ComeBack": {
       "__first__": "Start",
       "Start": {
         "id": "Start",
@@ -40810,7 +40810,7 @@
         }
       }
     },
-    "Brigit_Ambassador_ComeBack": {
+    "Trail_Ambassador_ComeBack": {
       "__first__": "Start",
       "Start": {
         "id": "Start",
@@ -40945,7 +40945,7 @@
         }
       }
     },
-    "Zenda_Ambassador_ComeBack": {
+    "Salve_Ambassador_ComeBack": {
       "__first__": "Start",
       "Start": {
         "id": "Start",
@@ -41088,7 +41088,7 @@
         }
       }
     },
-    "Pomelo_Quest_Before": {
+    "Pylon_Quest_Before": {
       "__first__": "Start",
       "Start": {
         "id": "Start",
@@ -41151,7 +41151,7 @@
           {
             "action": "GIVE_QUEST_ITEM",
             "opts": [
-              "pomelo"
+              "pylon"
             ]
           },
           {
@@ -41204,7 +41204,7 @@
         ]
       }
     },
-    "Pomelo_Quest_Started": {
+    "Pylon_Quest_Started": {
       "__first__": "Start",
       "Start": {
         "id": "Start",
@@ -41249,7 +41249,7 @@
         ]
       }
     },
-    "Pomelo_Quest_Completed": {
+    "Pylon_Quest_Completed": {
       "__first__": "Start",
       "Start": {
         "id": "Start",
@@ -41293,7 +41293,7 @@
         ]
       }
     },
-    "Zenda_Quest_Before": {
+    "Salve_Quest_Before": {
       "__first__": "Start",
       "Start": {
         "id": "Start",
@@ -41355,7 +41355,7 @@
           {
             "action": "GIVE_QUEST_ITEM",
             "opts": [
-              "zenda"
+              "salve"
             ]
           },
           {
@@ -41386,7 +41386,7 @@
         ]
       }
     },
-    "Zenda_Quest_Started": {
+    "Salve_Quest_Started": {
       "__first__": "Start",
       "Start": {
         "id": "Start",
@@ -41410,7 +41410,7 @@
         ]
       }
     },
-    "Zenda_Quest_Completed": {
+    "Salve_Quest_Completed": {
       "__first__": "Start",
       "Start": {
         "id": "Start",
@@ -41433,7 +41433,7 @@
         ]
       }
     },
-    "Zenda_Quest_SideCompleted": {
+    "Salve_Quest_SideCompleted": {
       "__first__": "Start",
       "Start": {
         "id": "Start",
