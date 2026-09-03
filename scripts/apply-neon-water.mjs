@@ -5,7 +5,9 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const projectRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const WEBGL_CACHE = "neon-water-runfx-no2";
+const WEBGL_CACHE = "west-music-wipe";
+
+const CHARACTER_URL_SWAPS = [];
 
 const WATER_COLOR_SWAPS = [
   ["#3fbfff", "#39ff14"],
@@ -108,6 +110,10 @@ function patchRunFx(source) {
   return applySwaps(source, RUN_FX_SWAPS);
 }
 
+function patchCharacterUrl(source) {
+  return applySwaps(source, CHARACTER_URL_SWAPS);
+}
+
 function patchIntroCam(source) {
   return applySwaps(source, INTRO_CAM_SWAPS);
 }
@@ -152,7 +158,7 @@ const vendorFiles = [
 
 const patched = [];
 for (const file of webglFiles) {
-  if (patchFile(file, (source) => patchRunFx(patchWaterColors(source)))) {
+  if (patchFile(file, (source) => patchCharacterUrl(patchRunFx(patchWaterColors(source))))) {
     patched.push(path.relative(projectRoot, file));
   }
 }
